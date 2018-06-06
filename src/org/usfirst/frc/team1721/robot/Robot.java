@@ -12,8 +12,9 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import org.usfirst.frc.team1721.robot.commands.ExampleCommand;
-import org.usfirst.frc.team1721.robot.subsystems.ExampleSubsystem;
+
+import org.usfirst.frc.team1721.robot.commands.*;
+import org.usfirst.frc.team1721.robot.subsystems.*;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -22,9 +23,10 @@ import org.usfirst.frc.team1721.robot.subsystems.ExampleSubsystem;
  * creating this project, you must also update the build.properties file in the
  * project.
  */
+
 public class Robot extends TimedRobot {
-	public static final ExampleSubsystem kExampleSubsystem
-			= new ExampleSubsystem();
+	public static final Autonomous kExampleSubsystem
+			= new Autonomous();
 	public static OI m_oi;
 
 	Command m_autonomousCommand;
